@@ -1,0 +1,15 @@
+@startuml
+
+== ComponentDidMount ==
+
+Box -> Container: get box height
+Container -> Box: set box position
+
+== onBoxSizeChange ==
+
+Box -> Container: get new box height
+
+Container --> Box: set new box position
+
+
+@enduml

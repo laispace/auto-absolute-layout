@@ -112,7 +112,7 @@ class Box extends PureComponent {
     }
 }
 
-class App extends PureComponent {
+class Container extends PureComponent {
     state = {
         boxSizeArr: [],
         boxPositionArr: [],
@@ -167,9 +167,6 @@ class App extends PureComponent {
         );
     }
     render = () => {
-        const {
-            boxPositionArr
-        } = this.state;
         return (
             <div>
                 {
@@ -300,6 +297,6 @@ class App extends PureComponent {
 }
 
 ReactDOM.render(
-    <App />,
+    <Container />,
     document.getElementById('container')
 );
